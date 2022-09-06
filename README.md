@@ -144,7 +144,7 @@ The required COCO annotations of the dataset can be converted with the [BOP tool
 
 The detection sample output for both the full and reduced BOP T-Less test set masks are provided in `MASKS`.
 
-The following provided script can be used the re-annotate existing segmentations to an arbitrary object subset. By setting `makeGTruth=True` ground truth masks can be created.
+The following provided script can be used the re-annotate existing segmentations to an arbitrary object subset. In case of varying reference frame for objects which are to be approximated by other / general objects this script is to be embedded in the evaluation section. By setting `makeGTruth=True` ground truth masks can be created.
 ```
 python reAnnotate.py
 ```
