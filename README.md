@@ -211,7 +211,7 @@ Replace the config file in  `auto_pose/ae/cfg_m3vision/m3_config_lmo_mp.cfg` wit
 
 Run the evaluation with:
 ```
-python auto_pose/m3_interface/compute_bop_results_m3.py auto_pose/ae/cfg_m3vision/m3_config_lmo_mp.cfg 
+python auto_pose/m3_interface/compute_bop_results_m3.py auto_pose/ae/cfg_m3vision/m3_config_tless.cfg 
                                                      --eval_name test 
                                                      --dataset_name=lmo 
                                                      --datasets_path=/path/to/bop/datasets 
