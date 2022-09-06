@@ -165,6 +165,7 @@ pip install --user progressbar
 ```
 Detailed instructions can be found [here](https://github.com/DLR-RM/AugmentedAutoencoder/tree/multipath). 
 ### Environment set-up (Google Colab)
+```
 !pip install tensorflow==2.6.0
 !pip install opencv-python
 !pip install --user --pre --upgrade PyOpenGL PyOpenGL_accelerate
@@ -183,7 +184,7 @@ Detailed instructions can be found [here](https://github.com/DLR-RM/AugmentedAut
 !mkdir $AE_WORKSPACE_PATH
 !cd $AE_WORKSPACE_PATH
 !ae_init_workspace
-
+```
 ### Multi-path encoder training
 1. Insert the 3D models
 2. Insert background images e.g. PascalVOC
