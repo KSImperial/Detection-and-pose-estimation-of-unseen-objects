@@ -209,6 +209,16 @@ Move the trained encoder to `$AE_WORKSPACE_PATH/experiments/exp_group/NAMEOFExp_
 
 Replace the config file in  `auto_pose/ae/cfg_m3vision/m3_config_lmo_mp.cfg` with `configs/m3_config_tless.cfg`.
 
+Run the evaluation with:
+```
+python auto_pose/m3_interface/compute_bop_results_m3.py auto_pose/ae/cfg_m3vision/m3_config_lmo_mp.cfg 
+                                                     --eval_name test 
+                                                     --dataset_name=lmo 
+                                                     --datasets_path=/path/to/bop/datasets 
+                                                     --result_folder /folder/to/results 
+                                                     -vis
+```
+
 ## References
 
 [1] S. Back _et al._, “Unseen Object Amodal Instance Segmentation via Hierarchical Occlusion Modeling,” in _2022 International Conference on Robotics and Automation (ICRA)_, May 2022, pp. 5085–5092. doi: 10.1109/ICRA46639.2022.9811646.
